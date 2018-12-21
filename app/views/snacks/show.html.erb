@@ -1,0 +1,6 @@
+<h1><%= @snack.name %></h1>
+<p>Price: <%= @snack.price %></p>
+<h6>Found in</h6>
+<% @snack.locations.each do |location| %>
+  <%= location %>
+<% end %>
